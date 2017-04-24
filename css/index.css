@@ -1,0 +1,27 @@
+.picture img {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 60%;
+}
+.text {
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.text p {
+  padding: 10px 0px;
+  padding-left: 130px;
+  color: rgb(255, 192, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+.text .go a {
+  /*border-bottom: 2px solid rgb(255, 192, 0);*/
+  color: inherit;
+}
+body {
+  background: url(../img/bg-1.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}

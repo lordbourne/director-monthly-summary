@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>团队架构</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/team.css">
+</head>
+
+<body>
+  <header>
+    您的团队架构
+  </header>
+  <section class="summary">直辖组人力 <span class="txt-data" data-zxzrl></span> 人，平均年龄 <span class="txt-data" data-avgAge></span></section>
+  <section class="chart-wrap">
+    <div class="chart" id="chart1"></div>
+    <div class="chart" id="chart2"></div>
+    <div class="chart" id="chart3"></div>
+    <div class="chart" id="chart4"></div>
+  </section>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/echarts.js"></script>
+  <script>
+    var team = {
+      "zxzrl": 200,
+      "avgAge": 30,
+      "male": 100,
+      "female": 90,
+      "senLevel1": 30,
+      "senLevel2": 30,
+      "senLevel3": 30,
+      "ts": 30,
+      "sa": 20,
+      "ta": 20,
+      "se": 30,
+      "sm": 20,
+      "sd": 10,
+      "ad": 10,
+      "zjas": 11,
+      "zas": 22
+    };
+    $('span[data-zxzrl]').html(team.zxzrl);
+    $('span[data-avgAge]').html(team.avgAge);
+
+    var chart1 = echarts.init(document.getElementById('chart1'));
+    var chart2 = echarts.init(document.getElementById('chart2'));
+    var chart3 = echarts.init(document.getElementById('chart3'));
+    var chart4 = echarts.init(document.getElementById('chart4'));
+
+    // app.title = '环形图';
+    var option = {
+      title : {
+        text: '',
+        x: "center",
+        padding: [50, 10]
+      },
+      tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+      },
+      series: [{
+        name: '',
+        type: 'pie',
+        radius: ['20%', '30%'],
+        data: [],
+        lableLine: {
+          normal: {
+            show: false,
+            length: '4',
+            length2: '3'
+          }
+       }
+      }]
+    };
+
+    option.title.text = "男女分布";
+    option.series[0].name = '男女分布';
+    option.series[0].data = [
+    {
+      value: team.male,
+      name: '男性'
+    },
+    {
+      value: team.female,
+      name: '女性'
+    }];
+    chart1.setOption(option);
+
+    option.title.text = "工龄分布";
+    option.series[0].name = '工龄分布';
+    option.series[0].data = [
+    {
+      value: team.senLevel1,
+      name: '一年内新人'
+    },
+    {
+      value: team.senLevel2,
+      name: '1-2 年员工'
+    },
+    {
+      value: team.senLevel3,
+      name: '2 年以上员工'
+    }];
+    chart2.setOption(option);
+
+    option.title.text = "xx分布";
+    option.series[0].name = '';
+    option.series[0].data = [
+    {
+      value: team.ts,
+      name: 'TS'
+    },
+    {
+      value: team.sa,
+      name: 'SA'
+    },
+    {
+      value: team.ta,
+      name: 'TA'
+    },
+    {
+      value: team.se,
+      name: 'SE'
+    },
+    {
+      value: team.sm,
+      name: 'SM'
+    },
+    {
+      value: team.sd,
+      name: 'SD'
+    }];
+    chart3.setOption(option);
+
+    option.title.text = "xx分布";
+    option.series[0].name = '';
+    option.series[0].data = [
+    {
+      value: team.zjas,
+      name: '直接育成 AS'
+    },
+    {
+      value: team.zas,
+      name: '总育成 AS'
+    }];
+    chart4.setOption(option);
+  </script>
+</body>
+
+</html>

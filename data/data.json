@@ -1,0 +1,136 @@
+// 专业术语
+//
+// 建议专业术语附上英文
+/*
+保单
+====
+保单号
+投保人
+承保时间
+
+个人保费
+======
+承保件数
+个人标保
+中支
+县支
+
+销售指标
+=======
+破零人数
+破零率
+人均产能
+3000P人力
+万P人力
+3万P人力
+5万P人力
+社区人力
+100万人力
+
+直辖组活动量
+========
+600C 人力
+
+出勤 attendance
+
+个人收入
+====
+管理津贴
+首佣
+续佣
+其他佣金
+
+
+
+ */
+
+{
+  "name": "周明方",
+  "rank": "AS",
+  "year": 2017,
+  "month": 3,
+  "teamArch": {
+    "male": 100,
+    "female": 90,
+    "avgAge": 30,
+    "senLevel1": 30,
+    "senLevel2": 30,
+    "senLevel3": 30,
+    "ts": 30,
+    "sa": 20,
+    "ta": 20,
+    "se": 30,
+    "sm": 20,
+    "sd": 10,
+    "ad": 10,
+    "as": 11
+  },
+  "premium": {
+    "pmPers": {
+      "copies": 3,
+      "pmStand": 84848,
+      "amount": 105000,
+      "amountAcm": 300000,
+      "rkBran": 45,
+      "rkDist": 102
+    },
+    "pmTeam": {
+      "copies": 3,
+      "amount": 105000,
+      "amountAcm": 300000,
+      "rkBran": 45,
+      "rkDist": 21,
+      "rkProv": 102,
+      "fst3": [
+        "张三",
+        "小明",
+        "李四"
+      ]
+    }
+  },
+  "maxPolicy": {
+    "name": "幸福有约",
+    "premium": "200000",
+    "no": "123456",
+    "applicant": "周明",
+    "coverDate": "2017-04-17"
+  },
+  "sale": {
+    "pl": 20,
+    "plRat": 30,
+    "rjcn": 30,
+    "p3000": 40,
+    "pw": 40,
+    "pw3": 50,
+    "pw5": 44,
+    "community": 50,
+    "million": 3
+  },
+  "active": {
+    "c600": 10,
+    "zxz": 15,
+    "achieved": 0
+  },
+  "recruit": {
+    "rcPers": 1,
+    "rcPersAcm": 1,
+    "rcPersCtrb": 1,
+    "rcTeam": 2,
+    "rcTeamAcc": 2,
+    "rcTeamCtrb": 2
+  },
+  "part": {
+    "ptPers": 21,
+    "ptTeam": 0.462,
+    "ptTeamGoal": 48.4,
+    "cost": 4000
+  },
+  "income": {
+    "gljt": 26500,
+    "sy": 6000,
+    "xy": 2800,
+    "other": 3000,
+    "rkBran": 11,
+    "rkProv": 36
+  }
+}

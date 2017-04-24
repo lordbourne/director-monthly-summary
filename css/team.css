@@ -1,0 +1,25 @@
+header {
+  width: 100%;
+  padding: 20px 0px;
+  line-height: 1.5;
+  font-size: 30px;
+  /*color: #ff8400;*/
+  text-align: center;
+}
+.summary {
+  width: 100%;
+  padding: 10px 0px;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: center;
+}
+.chart-wrap {
+  text-align: center;
+}
+.chart {
+  /*display: inline-block;*/
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-bottom: -90px;
+}
