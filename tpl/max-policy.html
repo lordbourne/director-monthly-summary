@@ -1,0 +1,17 @@
+<div id="max-policy" ng-controller="MaxPolicyController">
+  <header class="title">
+    您个人最大的一张单
+  </header>
+  <section class="sum-text">
+    <h1>{{maxPolicy.name}}, 标保 <span class="txt-data">{{maxPolicy.premium/10000}}</span> 万</h1>
+    <ul>
+      <li>保单号：{{maxPolicy.name}}</li>
+      <li>投保人：{{maxPolicy.applicant}}</li>
+      <li>承保时间：{{maxPolicy.coverDate}}</li>
+    </ul>
+    <img src="img/201704251532.png" alt="">
+    <p>您真厉害！</p>
+    <p>这张保单是否让您离梦想更近了？</p>
+  </section>
+</div>
+

@@ -1,0 +1,15 @@
+#pm-team {
+  text-align: center;
+}
+#pm-team .chart {
+  /*display: inline-block;*/
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+#pm-team p {
+  padding: 10px 0px;
+}
+#pm-team .sum-text {
+  margin-top: 20px;
+}

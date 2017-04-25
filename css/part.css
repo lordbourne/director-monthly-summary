@@ -1,0 +1,15 @@
+#part .pt-pers {
+  background: url(../img/201704251738.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 150px;
+  line-height: 100px;
+  text-align: center;
+  padding-right: 100px;
+}
+#part .sum-text p {
+  padding: 10px;
+  text-align: center;
+  font-style: 25px;
+  color: #92D050;
+}

@@ -6,23 +6,79 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/pm-pers.css">
+  <link rel="stylesheet" href="css/pm-team.css">
+  <link rel="stylesheet" href="css/max-policy.css">
+  <link rel="stylesheet" href="css/sale.css">
+  <link rel="stylesheet" href="css/active.css">
+  <link rel="stylesheet" href="css/recruit.css">
+  <link rel="stylesheet" href="css/part.css">
+  <link rel="stylesheet" href="css/income.css">
+
+  <link rel="stylesheet" href="css/swiper.min.css">
+
 </head>
-<body>
-<div class="page">
-  <section class="picture">
-    <img src="img/index-1.png" alt="">
-  </section>
-  <section class="text">
-    <p>亲爱的伙伴</p>
-    <p>2017年3月</p>
-    <p>您在这个月的经营中，</p>
-    <p>收获了哪些，还记得吗？</p>
-    <p>不要紧</p>
-    <p class="go"><a href="team.html">泰康记得 >></a></p>
-  </section>
-</div>
+<body ng-app="myapp">
 
+  <!-- <div class="" ui-view=""></div> -->
 
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/home.html'"></div>
+      </div>
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/team.html'"></div>
+      </div>
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/pm-pers.html'"></div>
+      </div>
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/pm-team.html'"></div>
+      </div>
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/max-policy.html'"></div>
+      </div>
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/sale.html'"></div>
+      </div>
+      <!-- 直辖组活动量 -->
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/active.html'"></div>
+      </div>
+      <!-- 直辖组增员 -->
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/recruit.html'"></div>
+      </div>
+      <!-- 直辖组出勤 -->
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/part.html'"></div>
+      </div>
+      <!-- 个人收入 -->
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/income.html'"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/echarts.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      autoHeight: true,
+      loop : true
+    });
+  </script>
 </body>
 </html>

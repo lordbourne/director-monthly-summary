@@ -1,0 +1,14 @@
+<div id="pm-pers" ng-controller="PmPersController">
+  <header class="title">
+    您的个人保费
+  </header>
+  <section class="chart" id="pm-pers-chart1">
+
+  </section>
+  <section class="sum-text">
+    <p><span class="txt-data">{{month}}</span> 月，您承保 <span class="txt-data">{{pmPers.copies}}</span> 件，个人标保 <span class="txt-data">{{pmPers.pmStand}}</span> 元。</p>
+    <p>在中支排行第 <span class="txt-data">{{pmPers.rkBran}}</span> 名</p>
+    <p>在县支排行第 <span class="txt-data">{{pmPers.rkDist}}</span> 名</p>
+  </section>
+</div>
+

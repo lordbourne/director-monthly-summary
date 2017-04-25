@@ -1,0 +1,14 @@
+<div id="pm-team" class="page" ng-controller="PmTeamController">
+  <header class="title">
+    您的团队保费
+  </header>
+  <section class="chart" id="pm-team-chart1">
+
+  </section>
+  <section class="sum-text">
+    <p><span class="txt-data">{{month}}</span> 月，您直辖组承保 <span class="txt-data">{{pmTeam.copies}}</span> 件，标保 <span class="txt-data">{{pmTeam.pmStand}}</span> 元。</p>
+    <p>在中支排行第 <span class="txt-data">{{pmTeam.rkBran}}</span> 名</p>
+    <p>在县支排行第 <span class="txt-data">{{pmTeam.rkDist}}</span> 名</p>
+  </section>
+</div>
+

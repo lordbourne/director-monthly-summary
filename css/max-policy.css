@@ -1,0 +1,22 @@
+#max-policy h1 {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+#max-policy ul li {
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+}
+#max-policy img {
+  width: 80%;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+#max-policy p {
+  text-align: center;
+  font-size: 25px;
+  color: #FFC000;
+  padding: 10px;
+}
