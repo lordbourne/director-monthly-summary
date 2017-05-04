@@ -1,15 +1,15 @@
-#pm-pers {
+#pmPers {
   text-align: center;
 }
-#pm-pers .chart {
+#pmPers .chart {
   /*display: inline-block;*/
   width: 300px;
   height: 300px;
   margin: auto;
 }
-#pm-pers p {
+#pmPers p {
   padding: 10px 0px;
 }
-#pm-pers .sum-text {
+#pmPers .sum-text {
   margin-top: 20px;
 }

@@ -1,0 +1,47 @@
+a
+for /F %i in ('dir /A:-D /S /B') do move %i %i.bak
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/home.html'"></div>
+      </div>
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/team.html'"></div>
+      </div>
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/pm-pers.html'"></div>
+      </div>
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/pm-team.html'"></div>
+      </div>
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/max-policy.html'"></div>
+      </div>
+
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/sale.html'"></div>
+      </div>
+      <!-- 直辖组活动量 -->
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/active.html'"></div>
+      </div>
+      <!-- 直辖组增员 -->
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/recruit.html'"></div>
+      </div>
+      <!-- 直辖组出勤 -->
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/part.html'"></div>
+      </div>
+      <!-- 个人收入 -->
+      <div class="swiper-slide blue-slide">
+        <div class="" ng-include="'tpl/income.html'"></div>
+      </div>
+    </div>
+  </div>

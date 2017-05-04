@@ -15,8 +15,79 @@
 //       // controllerAs: 'ayCtrl'
 //     });
 // });
-var app = angular.module('myapp', []);
+//
+//
+/*
+ */
+var app = angular.module('myapp', ['ui.router']);
 
+//------------路由配置-------------
+app.config(function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.when("", "/home");
+  $stateProvider
+    .state('active', {
+      url: '/active',
+      templateUrl: 'tpl/active.html',
+      controller: 'ActiveController',
+      controllerAs: 'activeCtrl'
+    })
+    .state('home', {
+      url: '/home',
+      templateUrl: 'tpl/home.html',
+      controller: 'HomeController',
+      controllerAs: 'homeCtrl'
+    })
+    .state('income', {
+      url: '/income',
+      templateUrl: 'tpl/income.html',
+      controller: 'IncomeController',
+      controllerAs: 'incomeCtrl'
+    })
+    .state('maxPolicy', {
+      url: '/maxPolicy',
+      templateUrl: 'tpl/maxPolicy.html',
+      controller: 'MaxPolicyController',
+      controllerAs: 'maxPolicyCtrl'
+    })
+    .state('part', {
+      url: '/part',
+      templateUrl: 'tpl/part.html',
+      controller: 'PartController',
+      controllerAs: 'partCtrl'
+    })
+    .state('pmPers', {
+      url: '/pmPers',
+      templateUrl: 'tpl/pmPers.html',
+      controller: 'PmPersController',
+      controllerAs: 'pmPersCtrl'
+    })
+    .state('pmTeam', {
+      url: '/pmTeam',
+      templateUrl: 'tpl/pmTeam.html',
+      controller: 'PmTeamController',
+      controllerAs: 'pmTeamCtrl'
+    })
+    .state('recruit', {
+      url: '/recruit',
+      templateUrl: 'tpl/recruit.html',
+      controller: 'RecruitController',
+      controllerAs: 'recruitCtrl'
+    })
+    .state('sale', {
+      url: '/sale',
+      templateUrl: 'tpl/sale.html',
+      controller: 'SaleController',
+      controllerAs: 'saleCtrl'
+    })
+    .state('team', {
+      url: '/team',
+      templateUrl: 'tpl/team.html',
+      controller: 'TeamController',
+      controllerAs: 'teamCtrl'
+    });
+});
+
+//------------控制器-------------
 // 主页控制
 app.controller('HomeController', function($rootScope, $http) {
   $http.get('data/data.json', {
@@ -33,6 +104,7 @@ app.controller('HomeController', function($rootScope, $http) {
       alert('error');
     });
 });
+
 // 团队架构
 app.controller('TeamController', function($rootScope, $scope, $timeout) {
 
@@ -150,8 +222,6 @@ app.controller('TeamController', function($rootScope, $scope, $timeout) {
 
     console.log($scope.teamArch.zjas);
   }, 1000);
-
-
 });
 
 // 个人保费
@@ -371,7 +441,7 @@ app.controller('ActiveController', function($rootScope, $scope, $timeout) {
      },
      xAxis: [{
        type: 'category',
-       data: ['c600', 'zxz'],
+       data: ['c600', '直辖组人力'],
        axisTick: {
          alignWithLabel: true
        }
@@ -576,3 +646,4 @@ app.controller('IncomeController', function($rootScope, $scope, $timeout) {
 
 
  */
+

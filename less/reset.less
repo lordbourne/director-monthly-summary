@@ -1,3 +1,4 @@
+/* ----初始化---- */
 body,
 div,
 dl,
@@ -96,8 +97,12 @@ html {
 .clearfix {
   *zoom: 1;
 }
+
+
+
 .txt-data {
   color: #ff8400;
+  font-size: 1.5em;
 }
 .chart {
   /*display: inline-block;*/
@@ -107,13 +112,49 @@ html {
 }
 .title {
   width: 100%;
-  padding: 20px 0px;
+  padding: 35px 0px;
+  padding-bottom: 52px;
   line-height: 1.5;
   font-size: 30px;
   /*color: #ff8400;*/
   text-align: center;
 }
+img {
+  mas-width: 600px;
+}
 // .ng-scope {
 //   max-width: 700px;
 //   margin: auto;
 // }
+
+/*----------全局样式---------*/
+body {
+  position: relative;
+  background: url('../img/apic9069.JPG') no-repeat fixed;
+  // background-position: 0 0;
+  background-size: 100% 100%;
+  font-family: 'MS Serif', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.page-turn {
+  position: fixed;
+  top: 50%;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+  margin-top: -20px;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #222;
+  border: 3px solid #fff;
+  border-radius: 23px;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  text-decoration: none;
+}
+.page-turn.right {
+  right: 2px;
+  left: auto;
+}

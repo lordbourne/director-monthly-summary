@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/team.css">
-  <link rel="stylesheet" href="css/pm-pers.css">
-  <link rel="stylesheet" href="css/pm-team.css">
-  <link rel="stylesheet" href="css/max-policy.css">
+  <link rel="stylesheet" href="css/pmPers.css">
+  <link rel="stylesheet" href="css/pmTeam.css">
+  <link rel="stylesheet" href="css/maxPolicy.css">
   <link rel="stylesheet" href="css/sale.css">
   <link rel="stylesheet" href="css/active.css">
   <link rel="stylesheet" href="css/recruit.css">
@@ -22,52 +22,8 @@
 </head>
 <body ng-app="myapp">
 
+  <div ui-view=""></div>
   <!-- <div class="" ui-view=""></div> -->
-
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide blue-slide">
-        <div class="" ng-include="'tpl/home.html'"></div>
-      </div>
-
-      <div class="swiper-slide blue-slide">
-        <div class="" ng-include="'tpl/team.html'"></div>
-      </div>
-
-      <div class="swiper-slide blue-slide">
-        <div class="" ng-include="'tpl/pm-pers.html'"></div>
-      </div>
-
-      <div class="swiper-slide blue-slide">
-        <div class="" ng-include="'tpl/pm-team.html'"></div>
-      </div>
-
-      <div class="swiper-slide blue-slide">
-        <div class="" ng-include="'tpl/max-policy.html'"></div>
-      </div>
-
-      <div class="swiper-slide blue-slide">
-        <div class="" ng-include="'tpl/sale.html'"></div>
-      </div>
-      <!-- 直辖组活动量 -->
-      <div class="swiper-slide blue-slide">
-        <div class="" ng-include="'tpl/active.html'"></div>
-      </div>
-      <!-- 直辖组增员 -->
-      <div class="swiper-slide blue-slide">
-        <div class="" ng-include="'tpl/recruit.html'"></div>
-      </div>
-      <!-- 直辖组出勤 -->
-      <div class="swiper-slide blue-slide">
-        <div class="" ng-include="'tpl/part.html'"></div>
-      </div>
-      <!-- 个人收入 -->
-      <div class="swiper-slide blue-slide">
-        <div class="" ng-include="'tpl/income.html'"></div>
-      </div>
-    </div>
-  </div>
 
   <script src="js/echarts.js"></script>
   <script src="js/swiper.min.js"></script>
