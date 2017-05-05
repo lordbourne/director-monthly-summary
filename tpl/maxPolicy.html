@@ -4,11 +4,25 @@
   </header>
   <section class="sum-text">
     <h1>{{maxPolicy.name}}, 标保 <span class="txt-data">{{maxPolicy.premium/10000}}</span> 万</h1>
-    <ul>
+    <!-- <ul>
       <li>保单号：{{maxPolicy.name}}</li>
       <li>投保人：{{maxPolicy.applicant}}</li>
       <li>承保时间：{{maxPolicy.coverDate}}</li>
-    </ul>
+    </ul> -->
+    <table class="table table-striped">
+      <tr>
+        <td>保单号</td>
+        <td>{{maxPolicy.name}}</td>
+      </tr>
+      <tr>
+        <td>投保人</td>
+        <td>{{maxPolicy.applicant}}</td>
+      </tr>
+      <tr>
+        <td>承保时间</td>
+        <td>{{maxPolicy.coverDate}}</td>
+      </tr>
+    </table>
     <img src="img/201704251532.png" alt="">
     <p>您真厉害！</p>
     <p>这张保单是否让您离梦想更近了？</p>

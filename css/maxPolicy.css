@@ -8,6 +8,13 @@
   margin: auto;
   padding: 10px;
 }
+#maxPolicy table {
+  margin: auto;
+}
+#maxPolicy table tr td:nth-child(1) {
+  text-align: right;
+  color: #aaa;
+}
 #maxPolicy img {
   width: 60%;
   display: block;
